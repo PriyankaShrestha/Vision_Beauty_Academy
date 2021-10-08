@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vision</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="products">Products</string>
+    <string name="services">Services</string>
+    <string name="business_name">Vision Beauty Academy &amp; Makeup Studio</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
