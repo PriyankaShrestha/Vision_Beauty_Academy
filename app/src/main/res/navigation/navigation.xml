@@ -35,4 +35,16 @@
         android:label="Services"
         tools:layout="@layout/frag_services" />
 
+    <fragment
+        android:id="@+id/front_page"
+        android:name="com.example.vision.FrontPage"
+        android:label="FrontPage"
+        tools:layout="@layout/front_page" />
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.vision.LoginPage"
+        android:label="LoginPage"
+        tools:layout="@layout/frag_login" />
+
 </navigation>

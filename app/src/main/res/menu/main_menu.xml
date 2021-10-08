@@ -12,4 +12,8 @@
         android:id="@+id/products"/>
     <item android:title="@string/services"
         android:id="@+id/services"/>
+    <item android:title="@string/login"
+        android:id="@+id/login"/>
+    <item android:title="@string/front_page"
+        android:id="@+id/frontpage"/>
 </menu>

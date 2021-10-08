@@ -50,11 +50,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             name = itemView.findViewById(R.id.name);
             price = itemView.findViewById(R.id.price);
             productId = itemView.findViewById(R.id.productId);
-            itemView.setOnClickListener(view -> listener.onCLicked(products.get(getAdapterPosition())));
+            itemView.setOnClickListener(view -> listener.onClicked(products.get(getAdapterPosition())));
         }
     }
 
     public interface onListItemClickListener {
-        void onCLicked(Product prod);
+        void onClicked(Product prod);
     }
 }

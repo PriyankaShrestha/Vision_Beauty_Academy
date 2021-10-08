@@ -18,6 +18,7 @@ import java.util.List;
 
 public class Products extends Fragment implements ProductAdapter.onListItemClickListener {
 
+    // TODO safe delete the classes related to products
     RecyclerView recyclerView;
     List<Product> productsList  = new ArrayList<>();
 
@@ -47,7 +48,7 @@ public class Products extends Fragment implements ProductAdapter.onListItemClick
     }
 
     @Override
-    public void onCLicked(Product prod) {
+    public void onClicked(Product prod) {
         // do something
     }
 }

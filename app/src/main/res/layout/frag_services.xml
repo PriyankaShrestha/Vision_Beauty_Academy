@@ -3,14 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Services"
->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Services">
 
     <TextView
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Service Fragment"
+        android:text="@string/services"
         android:textSize="45sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/servicesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

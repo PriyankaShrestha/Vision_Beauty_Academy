@@ -8,4 +8,12 @@
     <string name="business_name">Vision Beauty Academy &amp; Makeup Studio</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="front_page">Front Page</string>
+    <string name="service_name">Service Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
 </resources>
