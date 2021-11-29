@@ -10,7 +10,7 @@
 - [X] As a user I want to be able to view the services that the Salon provides.
 - [ ] As a client I want to be able to book an appointment.
 - [ ] As an Administrator I want to be able to view the bookings.
-- [ ] As an Administrator I want to be able to add a new class that is going to start in the near future.
+- [X] As an Administrator I want to be able to add a new course that is going to start in the near future.
 - [ ] As an Administrator I want to be able to assign students in the registered class.
 - [ ] As an Administrator I want to be able to take attendance of the students.
 - [ ] As an Administrator I want to be able to see the data of the students.
