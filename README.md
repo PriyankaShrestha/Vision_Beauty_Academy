@@ -7,10 +7,11 @@
 - [X] As a user I want to be able to register to the app.
 - [X] As a user I want to be able to login to the app.
 - [X] As an Administrator I want to be able to add services I provide in my Salon.
-- [ ] As a user I want to be able to view the services that the Salon provides.
+- [X] As a user I want to be able to view the services that the Salon provides.
 - [ ] As a client I want to be able to book an appointment.
+- [ ] As an Administrator I want to be able to view the bookings.
 - [ ] As an Administrator I want to be able to add a new class that is going to start in the near future.
-- [ ] As an Administrator I want to be able to register students in the registered class.
+- [ ] As an Administrator I want to be able to assign students in the registered class.
 - [ ] As an Administrator I want to be able to take attendance of the students.
 - [ ] As an Administrator I want to be able to see the data of the students.
 - [ ] As an Administrator I want to be able to add material for the students.
