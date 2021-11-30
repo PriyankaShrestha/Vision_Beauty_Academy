@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gold">#ffd700</color>
+    <color name="goldenrod">#fafad2</color>
+    <color name="sandstorm">#a88f00</color>
+    <color name="colorHint">#eae0c8</color>
+    <color name="onyx">#111111</color>
+    <color name="light_gold">#b89400</color>
+    <color name="medium_gold">#aa8800</color>
+    <color name="dark_gold">#997b00</color>
 </resources>
+

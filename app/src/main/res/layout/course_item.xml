@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/onyx">
+
+    <TextView
+        android:id="@+id/course_name"
+        style="@style/recyclerText"
+        android:layout_weight="1"
+        android:background="@color/light_gold"
+        android:text="Course Name"/>
+
+    <TextView
+        android:id="@+id/start_date"
+        style="@style/recyclerText"
+        android:layout_weight="1"
+        android:background="@color/medium_gold"
+        android:text="Start Date" />
+
+</LinearLayout>

@@ -1,91 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyProfile">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/onyx"
+    tools:context=".UI.View.MyProfile">
+
 
     <TextView
         android:id="@+id/heading"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="570dp"
         android:text="@string/my_profile"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        style="@style/headingOne" />
 
 
     <ImageView
         android:id="@+id/profile_picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/edit_name"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="431dp"
         tools:src="@tools:sample/avatars" />
 
-    <EditText
-        android:id="@+id/edit_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edit_phone_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        app:layout_constraintStart_toStartOf="@+id/edit_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_address" />
+    <TextView
+        android:id="@+id/name"
+        style="@style/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="379dp"
+        android:text="@string/name" />
 
-    <EditText
-        android:id="@+id/edit_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/edit_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email_address" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="355dp"
+        app:hintEnabled="false"
+        android:background="@drawable/text_background">
 
-    <EditText
-        android:id="@+id/edit_email_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/edit_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            style="@style/inputField" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/edit_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/edit_name"
-        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="319dp"
+        android:text="@string/address" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="300dp"
+        app:hintEnabled="false"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_address"
+            style="@style/inputField"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/phone_number"
+        style="@style/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="264dp"
+        android:text="@string/phone_number" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="245dp"
+        app:hintEnabled="false"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_phoneNumber"
+            style="@style/inputField"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/email_address"
+        style="@style/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="208dp"
+        android:text="@string/email_address" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="190dp"
+        app:hintEnabled="false"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            style="@style/inputField"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/password"
+        style="@style/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="146dp"
+        android:text="@string/password" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="130dp"
+        app:hintEnabled="false"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            style="@style/inputField"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <Button
         android:id="@+id/button_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="45dp"
+        style="@style/mainButton"
+        android:text="@string/save" />
+
 
     <Button
         android:id="@+id/button_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="45dp"
         android:text="@string/cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        style="@style/mainButton" />
+</RelativeLayout>

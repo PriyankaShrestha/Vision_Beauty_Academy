@@ -4,21 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Services">
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/services"
-        android:textSize="45sp"
-        />
+    tools:context=".UI.Services.ServicesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/servicesList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/header"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

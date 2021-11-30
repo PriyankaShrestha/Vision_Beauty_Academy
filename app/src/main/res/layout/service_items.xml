@@ -3,30 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/onyx"
     >
 
     <TextView
         android:id="@+id/service_name"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_weight="1"
-        android:background="#bcd9ea"
+        style="@style/recyclerText"
+        android:layout_weight="1.5"
+        android:background="@color/light_gold"
         android:text="@string/service_name"/>
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        style="@style/recyclerText"
         android:layout_weight="3"
-        android:background="#8bbdd9"
+        android:background="@color/medium_gold"
         android:text="@string/description"/>
 
     <TextView
         android:id="@+id/service_price"
-        android:layout_width="0dp"
-        android:layout_weight="2"
-        android:layout_height="70dp"
-        android:background="#5ba4cf"
+        style="@style/recyclerText"
+        android:layout_weight="1"
+        android:background="@color/dark_gold"
         android:text="@string/price"/>
 
 </LinearLayout>

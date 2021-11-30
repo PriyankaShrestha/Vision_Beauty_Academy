@@ -2,18 +2,36 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="always"
+        android:onClick="logout"/>
+
     <item android:title="@string/settings"
         android:id="@+id/settings"/>
-    <item android:title="@string/my_profile"
-        android:id="@+id/my_profile"
-        android:icon="@drawable/ic_baseline_person_24"
-        app:showAsAction="always"/>
-    <item android:title="@string/products"
-        android:id="@+id/products"/>
-    <item android:title="@string/services"
-        android:id="@+id/services"/>
-    <item android:title="@string/login"
-        android:id="@+id/login"/>
+
     <item android:title="@string/front_page"
         android:id="@+id/frontpage"/>
+
+    <item android:title="@string/services"
+        android:id="@+id/services"/>
+
+    <item android:title="@string/booking"
+        android:id="@+id/booking"/>
+
+    <item android:title="Add Service"
+        android:id="@+id/add_service"/>
+
+    <item android:title="View Booking"
+        android:id="@+id/view_bookings" />
+
+    <item android:title="Add Course"
+        android:id="@+id/add_course" />
+
+    <item android:title="View Course"
+        android:id="@+id/view_course" />
+
+    <item android:title="Add Student"
+        android:id="@+id/add_student" />
 </menu>

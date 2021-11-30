@@ -3,13 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings"
+    tools:context=".UI.View.Settings"
+    android:background="@color/onyx"
     >
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Settings Fragment"
-        android:textSize="45sp"/>
+        android:layout_height="match_parent">
 
+        <TextView
+            style="@style/headingOne"
+            android:text="Settings" />
+
+        <TextView
+            style="@style/text"
+            android:layout_marginEnd="193dp"
+            android:layout_marginBottom="555dp"
+            android:text="Delete my profile" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/mainButton"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="546dp"
+            android:text="Delete" />
+
+        <TextView
+            android:id="@+id/edit_profile"
+            style="@style/text"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="507dp"
+            android:text="Edit Profile" />
+
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

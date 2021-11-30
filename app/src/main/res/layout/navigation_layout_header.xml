@@ -6,10 +6,9 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/username"
         android:text="@string/app_name"
-        android:textSize="40sp"
+        style="@style/headingOne"
         />
 
 </LinearLayout>

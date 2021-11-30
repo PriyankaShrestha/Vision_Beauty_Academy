@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Login.LoginActivity"
+    android:background="@color/onyx">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/login_header"
+        style="@style/headingOne"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="405dp"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_username"
+            style="@style/inputField"
+            android:hint="@string/username"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputLayout"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/text_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            style="@style/inputField"
+            android:hint="@string/password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/mainButton"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="270dp"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/signUpMessage"
+        style="@style/text"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="140dp"
+        android:text="Don't have an account?" />
+
+    <Button
+        android:id="@+id/sign_up"
+        style="@style/mainButton"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="130dp"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/forgot_password"
+        style="@style/mainButton"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="272dp"
+        android:text="Forgot Password" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddStudent.AddStudentToClass"
+    android:background="@color/onyx">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/headingOne"
+            android:text="Assign Student to class" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="550dp"
+            android:backgroundTint="@color/gold"/>
+
+        <ListView
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="121dp"
+            android:layout_marginHorizontal="50dp"
+            android:divider="@color/dark_gold"
+            android:dividerHeight="1dp"
+            android:background="@color/gold"
+            android:listSelector="@color/dark_gold"
+            />
+
+        <Button
+            android:id="@+id/button_add"
+            style="@style/mainButton"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="44dp"
+            android:text="Add" />
+
+    </RelativeLayout>
+</FrameLayout>

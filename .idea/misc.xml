@@ -3,18 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_login.xml" value="0.1" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_my_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/drawable-v24/text_background.xml" value="0.265625" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_login.xml" value="0.22456140350877193" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_register_user.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/available_time.xml" value="0.1" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/booking_items.xml" value="0.1875" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/course_item.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_login.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_my_profile.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_products.xml" value="0.264" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_services.xml" value="0.1" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_settings.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/front_page.xml" value="0.4" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_services.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_course.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_services.xml" value="0.4" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_student_to_class.xml" value="0.25" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_book_appointment.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_register_user.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_view_booking.xml" value="0.264" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_view_courses.xml" value="0.25" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_view_users.xml" value="0.25" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/front_page.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/navigation_drawer_header.xml" value="0.1537037037037037" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/navigation_layout_header.xml" value="0.14537037037037037" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/navigation_layout_header.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/navigatoin_layout_header.xml" value="0.1537037037037037" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/post_products.xml" value="0.12962962962962962" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/products_item.xml" value="0.1" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/products_item.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/service_items.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/appbar.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
