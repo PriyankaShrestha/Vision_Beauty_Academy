@@ -3,25 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_vision">
-
-    <fragment
-        android:id="@+id/nav_vision"
-        android:name="com.example.vision.UI.View.MyProfile"
-        android:label="Vision"
-        tools:layout="@layout/frag_my_profile" />
+    app:startDestination="@+id/services">
 
     <fragment
         android:id="@+id/settings"
-        android:name="com.example.vision.UI.View.Settings"
+        android:name="com.example.vision.UI.Settings.Settings"
         android:label="Settings"
         tools:layout="@layout/frag_settings" />
 
-    <fragment
-        android:id="@+id/my_profile"
-        android:name="com.example.vision.UI.View.MyProfile"
-        android:label="My Profile"
-        tools:layout="@layout/frag_my_profile" />
+         <fragment
+        android:id="@+id/add_service"
+        android:name="com.example.vision.UI.AddServices.AddServices"
+        android:label="AddService"
+        tools:layout="@layout/fragment_add_services" />
+
+            <fragment
+        android:id="@+id/view_bookings"
+        android:name="com.example.vision.UI.ViewBooking.ViewBookingFragment"
+        android:label="Viewbooking"
+        tools:layout="@layout/fragment_view_booking" />
+
+         <fragment
+        android:id="@+id/add_course"
+        android:name="com.example.vision.UI.AddCourse.AddCourse"
+        android:label="AddCourse"
+        tools:layout="@layout/fragment_add_course" />
+
+          <fragment
+        android:id="@+id/add_student"
+        android:name="com.example.vision.UI.AddStudent.AddStudentToClass"
+        android:label="AddStudent"
+        tools:layout="@layout/fragment_add_student_to_class" />
 
     <fragment
         android:id="@+id/services"
@@ -29,11 +41,6 @@
         android:label="Services"
         tools:layout="@layout/frag_services" />
 
-    <fragment
-        android:id="@+id/front_page"
-        android:name="com.example.vision.UI.View.FrontPage"
-        android:label="FrontPage"
-        tools:layout="@layout/front_page" />
 
     <fragment
         android:id="@+id/booking"
@@ -42,33 +49,9 @@
         tools:layout="@layout/fragment_book_appointment" />
 
     <fragment
-        android:id="@+id/add_service"
-        android:name="com.example.vision.UI.AddServices.AddServices"
-        android:label="AddService"
-        tools:layout="@layout/fragment_add_services" />
-
-    <fragment
-        android:id="@+id/view_bookings"
-        android:name="com.example.vision.UI.ViewBooking.ViewBookingFragment"
-        android:label="Viewbooking"
-        tools:layout="@layout/fragment_view_booking" />
-
-    <fragment
-        android:id="@+id/add_course"
-        android:name="com.example.vision.UI.AddCourse.AddCourse"
-        android:label="AddCourse"
-        tools:layout="@layout/fragment_add_course" />
-
-    <fragment
         android:id="@+id/view_course"
         android:name="com.example.vision.UI.ViewCourses.ViewCourses"
         android:label="ViewCourse"
         tools:layout="@layout/fragment_view_courses" />
-
-    <fragment
-        android:id="@+id/add_student"
-        android:name="com.example.vision.UI.AddStudent.AddStudentToClass"
-        android:label="AddStudent"
-        tools:layout="@layout/fragment_add_student_to_class" />
 
 </navigation>

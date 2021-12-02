@@ -28,10 +28,13 @@ public class AddServiceViewModel extends AndroidViewModel {
     }
 
     public void addService(String serviceName, double price, String description) {
-        Service service = new Service();
-        service.setService_name(serviceName);
-        service.setPrice(price);
-        service.setDescription(description);
-        serviceRepository.addService(service);
+        if(!serviceName.trim().equals("") && price != 0 && !description.trim().equals("")) {
+            Service service = new Service();
+            service.setService_name(serviceName);
+            service.setPrice(price);
+            service.setDescription(description);
+            serviceRepository.addService(service);
+        }
+        else Toast.makeText(getApplication(), "Please fill out all the fields", Toast.LENGTH_SHORT).show();
     }
 }

@@ -16,4 +16,6 @@ public interface UserRepository extends PropertyChangeSubject {
     void logout();
 
     LiveData<ArrayList<User>> getAllUser();
+
+    void deleteProfile();
 }

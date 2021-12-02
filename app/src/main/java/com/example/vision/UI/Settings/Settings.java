@@ -1,4 +1,4 @@
-package com.example.vision.UI.View;
+package com.example.vision.UI.Settings;
 
 import android.os.Bundle;
 
@@ -10,14 +10,18 @@ import androidx.lifecycle.ViewModelProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.vision.R;
-import com.example.vision.UI.ViewModel.SettingsViewModel;
+import com.example.vision.UI.Settings.SettingsViewModel;
 
 
 public class Settings extends Fragment {
+
     View view;
     SettingsViewModel viewModel;
+    private Button settings;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -26,6 +30,14 @@ public class Settings extends Fragment {
 
         viewModel = new ViewModelProvider(this).get(SettingsViewModel.class);
 
+        settings = view.findViewById(R.id.delete);
+
+        settings.setOnClickListener(v -> onClicked());
+
         return view;
+    }
+
+    private void onClicked() {
+        viewModel.deleteProfile();
     }
 }

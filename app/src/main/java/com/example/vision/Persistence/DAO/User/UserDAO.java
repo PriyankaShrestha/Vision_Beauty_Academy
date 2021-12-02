@@ -98,6 +98,10 @@ public class UserDAO extends LiveData<FirebaseUser> {
                 });
     }
 
+    public void deleteProfile() {
+        firebaseAuth.getCurrentUser().delete();
+    }
+
 
     public interface onInter {
         void users(ArrayList<User> users);

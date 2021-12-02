@@ -1,6 +1,7 @@
 package com.example.vision.UI.AddStudent;
 
 import android.app.Application;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -36,6 +37,9 @@ public class AddStudentViewModel extends AndroidViewModel {
     }
 
     public void addStudentToCourse(String courseName, String userName) {
-        courseRepository.addStudentToCourse(courseName, userName);
+        if(!courseName.trim().equals("") && !userName.trim().equals("")) {
+            courseRepository.addStudentToCourse(courseName, userName);
+        }
+        else Toast.makeText(getApplication(), "Please select all", Toast.LENGTH_SHORT).show();
     }
 }

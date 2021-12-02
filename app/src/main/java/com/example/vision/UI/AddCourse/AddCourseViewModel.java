@@ -28,12 +28,15 @@ public class AddCourseViewModel extends AndroidViewModel {
     }
 
     public void addCourse(String name, String content, String startDate, String  endDate) {
-        Course course = new Course();
-        course.setName(name);
-        course.setContents(content);
-        course.setStartDate(startDate);
-        course.setEndDate(endDate);
+        if(!name.trim().equals("") && !content.trim().equals("") && !startDate.trim().equals("") && !endDate.trim().equals("")) {
+            Course course = new Course();
+            course.setName(name);
+            course.setContents(content);
+            course.setStartDate(startDate);
+            course.setEndDate(endDate);
 
-        courseRepo.addCourse(course);
+            courseRepo.addCourse(course);
+        }
+        else Toast.makeText(getApplication(), "Please fill out all the fields", Toast.LENGTH_SHORT).show();
     }
 }

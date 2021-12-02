@@ -17,7 +17,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.vision.R;
+import com.example.vision.UI.Image.dashboard;
 import com.example.vision.UI.Login.LoginActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     AppBarConfiguration appBarConfiguration;
     private MainActivityViewModel viewModel;
 
+    private FloatingActionButton viewGalary;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
         setupNavigation();
+
+        viewGalary = findViewById(R.id.view_gallary);
+        viewGalary.setOnClickListener(v -> onClicked());
+    }
+
+    private void onClicked() {
+        startActivity(new Intent(this, dashboard.class));
+        finish();
     }
 
     private void setupNavigation() {
@@ -44,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
        setSupportActionBar(toolbar);
 
         appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_vision,
+                R.id.services,
                 R.id.logout)
                 .setOpenableLayout(drawerLayout)
                 .build();

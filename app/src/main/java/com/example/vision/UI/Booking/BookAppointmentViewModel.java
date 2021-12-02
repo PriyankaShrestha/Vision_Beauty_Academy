@@ -51,11 +51,14 @@ public class BookAppointmentViewModel extends AndroidViewModel {
     }
 
     public void requestBooking(String date, String time, String specialRequest, String username) {
-        Booking booking = new Booking();
-        booking.setDate(date);
-        booking.setTime(time);
-        booking.setSpecialRequest(specialRequest);
-        booking.setUser(username);
-        repo.requestBooking(booking);
+        if(!date.trim().equals("") && !time.trim().equals("") && !specialRequest.trim().equals("")) {
+            Booking booking = new Booking();
+            booking.setDate(date);
+            booking.setTime(time);
+            booking.setSpecialRequest(specialRequest);
+            booking.setUser(username);
+            repo.requestBooking(booking);
+        }
+        else Toast.makeText(getApplication(), "Please fill out all the fields", Toast.LENGTH_SHORT).show();
     }
 }

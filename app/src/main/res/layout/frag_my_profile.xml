@@ -3,152 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/onyx"
-    tools:context=".UI.View.MyProfile">
-
-
-    <TextView
-        android:id="@+id/heading"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="570dp"
-        android:text="@string/my_profile"
-        style="@style/headingOne" />
+    tools:context=".UI.Image.dashboard">
 
 
     <ImageView
-        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="131dp"
+        android:src="@drawable/vision_logo" />
+
+    <TextView
+        style="@style/headingOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="508dp"
+        android:text="Welcome To Vision" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photo_booth"
+        android:layout_width="fill_parent"
+        android:layout_height="490dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload"
+        style="@style/mainButton"
+        android:layout_gravity="end"
+        android:src="@drawable/upload"
+        android:layout_margin="20dp"/>
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="431dp"
-        tools:src="@tools:sample/avatars" />
+        />
 
-
-    <TextView
-        android:id="@+id/name"
-        style="@style/text"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="379dp"
-        android:text="@string/name" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/inputLayout"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="355dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_background">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_name"
-            style="@style/inputField" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <TextView
-        android:id="@+id/address"
-        style="@style/text"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="319dp"
-        android:text="@string/address" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/inputLayout"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="300dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_background">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_address"
-            style="@style/inputField"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <TextView
-        android:id="@+id/phone_number"
-        style="@style/text"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="264dp"
-        android:text="@string/phone_number" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/inputLayout"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="245dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_background">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_phoneNumber"
-            style="@style/inputField"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <TextView
-        android:id="@+id/email_address"
-        style="@style/text"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/email_address" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/inputLayout"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="190dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_background">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_email"
-            style="@style/inputField"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <TextView
-        android:id="@+id/password"
-        style="@style/text"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="146dp"
-        android:text="@string/password" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/inputLayout"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="130dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_background">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_password"
-            style="@style/inputField"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-
-    <Button
-        android:id="@+id/button_save"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="45dp"
-        style="@style/mainButton"
-        android:text="@string/save" />
-
-
-    <Button
-        android:id="@+id/button_cancel"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="45dp"
-        android:text="@string/cancel"
-        style="@style/mainButton" />
 </RelativeLayout>

@@ -54,6 +54,11 @@ public class UserRepositoryImpl implements UserRepository, CallBack, UserDAO.onI
     }
 
     @Override
+    public void deleteProfile() {
+        userDao.deleteProfile();
+    }
+
+    @Override
     public void registerUser(User newUser) {
         userDao.insert(newUser);
     }
