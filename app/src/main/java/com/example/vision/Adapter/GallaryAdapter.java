@@ -38,7 +38,6 @@ public class GallaryAdapter extends RecyclerView.Adapter<GallaryAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String current = images.get(position);
         Uri myUri = Uri.parse(current);
-        Log.i("TAG//////////////", "onBindViewHolder: //////////////////////////////////////////////" + myUri);
         Picasso.with(context).load(myUri).fit().centerCrop().into(holder.imageView);
     }
 

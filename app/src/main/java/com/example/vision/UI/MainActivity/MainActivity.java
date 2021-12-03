@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -15,12 +16,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.vision.R;
 import com.example.vision.UI.Image.dashboard;
 import com.example.vision.UI.Login.LoginActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton viewGalary;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
         setupNavigation();
 
         viewGalary = findViewById(R.id.view_gallary);
-        viewGalary.setOnClickListener(v -> onClicked());
+        viewGalary.setOnClickListener(v -> navigateToDashboard());
     }
 
-    private void onClicked() {
+    private void navigateToDashboard() {
         startActivity(new Intent(this, dashboard.class));
         finish();
     }
@@ -87,7 +95,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        if (FirebaseAuth.getInstance().getCurrentUser().getEmail().contains("admin")) {
+            getMenuInflater().inflate(R.menu.main_menu, menu);
+        }
+        else {
+            getMenuInflater().inflate(R.menu.menu_for_all, menu);
+        }
         return super.onCreateOptionsMenu(menu);
     }
 

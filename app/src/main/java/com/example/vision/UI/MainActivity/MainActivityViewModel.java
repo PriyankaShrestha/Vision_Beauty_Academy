@@ -4,9 +4,11 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 
 import com.example.vision.Repository.User.UserRepository;
 import com.example.vision.Repository.User.UserRepositoryImpl;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivityViewModel extends AndroidViewModel {
 
@@ -19,5 +21,9 @@ public class MainActivityViewModel extends AndroidViewModel {
 
     public void logout() {
         userRepo.logout();
+    }
+
+    public LiveData<FirebaseUser> getUsername() {
+        return userRepo.getCurrentUser();
     }
 }

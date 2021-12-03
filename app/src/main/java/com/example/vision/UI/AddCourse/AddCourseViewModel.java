@@ -30,10 +30,10 @@ public class AddCourseViewModel extends AndroidViewModel {
     public void addCourse(String name, String content, String startDate, String  endDate) {
         if(!name.trim().equals("") && !content.trim().equals("") && !startDate.trim().equals("") && !endDate.trim().equals("")) {
             Course course = new Course();
-            course.setName(name);
-            course.setContents(content);
-            course.setStartDate(startDate);
-            course.setEndDate(endDate);
+            course.setName(name.trim());
+            course.setContents(content.trim());
+            course.setStartDate(startDate.trim());
+            course.setEndDate(endDate.trim());
 
             courseRepo.addCourse(course);
         }

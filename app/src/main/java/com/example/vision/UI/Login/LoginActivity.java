@@ -29,14 +29,13 @@ public class LoginActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(LoginViewModel.class);
         initViews();
-
-        checkIfSignedIn();
     }
 
     private void checkIfSignedIn() {
         viewModel.getCurrentUser().observe(this, user -> {
-            if (user != null)
+            if (user != null) {
                 navigateToMainActivity();
+            }
         });
     }
 

@@ -82,12 +82,9 @@ public class dashboard extends AppCompatActivity {
     }
 
     private void setGallary() {
-        viewModel.getAllImages().observe(this, new Observer<ArrayList<String>>() {
-            @Override
-            public void onChanged(ArrayList<String> string) {
-                adapter.setImageItems(string);
-                recyclerView.setAdapter(adapter);
-            }
+        viewModel.getAllImages().observe(this, string -> {
+            adapter.setImageItems(string);
+            recyclerView.setAdapter(adapter);
         });
     }
 }

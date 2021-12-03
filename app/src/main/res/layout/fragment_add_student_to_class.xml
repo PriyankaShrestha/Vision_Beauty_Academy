@@ -21,20 +21,20 @@
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="50dp"
             android:layout_marginBottom="550dp"
-            android:backgroundTint="@color/gold"/>
+            android:backgroundTint="@color/gold"
+            />
 
         <ListView
             android:id="@+id/userList"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="121dp"
             android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="121dp"
+            android:background="@color/light_gold"
             android:divider="@color/dark_gold"
             android:dividerHeight="1dp"
-            android:background="@color/gold"
-            android:listSelector="@color/dark_gold"
-            />
+            android:listSelector="@color/dark_gold" />
 
         <Button
             android:id="@+id/button_add"

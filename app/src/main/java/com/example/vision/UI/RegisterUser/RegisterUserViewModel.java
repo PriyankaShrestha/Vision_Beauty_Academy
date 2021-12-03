@@ -28,11 +28,11 @@ public class RegisterUserViewModel extends AndroidViewModel {
     public void registerNewUser(String name, String address, String phone, String email, String password) {
         if(!name.trim().equals("") && !address.trim().equals("") && !phone.trim().equals("")) {
             User newUser = new User();
-            newUser.setName(name);
-            newUser.setAddress(address);
-            newUser.setPhoneNumber(phone);
-            newUser.setEmail(email);
-            newUser.setPassword(password);
+            newUser.setName(name.trim());
+            newUser.setAddress(address.trim());
+            newUser.setPhoneNumber(phone.trim());
+            newUser.setEmail(email.trim());
+            newUser.setPassword(password.trim());
             userRepository.registerUser(newUser);
         }
         else Toast.makeText(getApplication(), "Please fill out all the fields", Toast.LENGTH_SHORT).show();

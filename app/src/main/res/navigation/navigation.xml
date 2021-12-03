@@ -5,12 +5,6 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/services">
 
-    <fragment
-        android:id="@+id/settings"
-        android:name="com.example.vision.UI.Settings.Settings"
-        android:label="Settings"
-        tools:layout="@layout/frag_settings" />
-
          <fragment
         android:id="@+id/add_service"
         android:name="com.example.vision.UI.AddServices.AddServices"
@@ -23,13 +17,13 @@
         android:label="Viewbooking"
         tools:layout="@layout/fragment_view_booking" />
 
-         <fragment
+    <fragment
         android:id="@+id/add_course"
         android:name="com.example.vision.UI.AddCourse.AddCourse"
         android:label="AddCourse"
         tools:layout="@layout/fragment_add_course" />
 
-          <fragment
+    <fragment
         android:id="@+id/add_student"
         android:name="com.example.vision.UI.AddStudent.AddStudentToClass"
         android:label="AddStudent"

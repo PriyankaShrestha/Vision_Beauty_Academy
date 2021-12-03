@@ -7,6 +7,7 @@
     tools:context=".UI.MainActivity.MainActivity"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
+    android:background="@color/onyx"
     tools:openDrawer="start">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -22,7 +23,8 @@
                 android:id="@+id/myToolbar"
                 style="@style/Widget.MaterialComponents.Toolbar.Surface"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize" />
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/goldenrod"/>
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +38,6 @@
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="56dp"
                 app:defaultNavHost="true"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -51,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="28dp"
                 android:layout_marginBottom="28dp"
-                android:src="@drawable/galary"
                 app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/galary"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints"
                 android:contentDescription="Gallary" />
@@ -67,7 +68,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/navigation_layout_header"
-        app:menu="@menu/main_menu"
+        app:menu="@menu/menu_for_all"
         android:background="@color/black"
         app:itemTextColor="@color/dark_gold"/>
 

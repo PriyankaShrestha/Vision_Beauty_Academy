@@ -53,9 +53,9 @@ public class BookAppointmentViewModel extends AndroidViewModel {
     public void requestBooking(String date, String time, String specialRequest, String username) {
         if(!date.trim().equals("") && !time.trim().equals("") && !specialRequest.trim().equals("")) {
             Booking booking = new Booking();
-            booking.setDate(date);
-            booking.setTime(time);
-            booking.setSpecialRequest(specialRequest);
+            booking.setDate(date.trim());
+            booking.setTime(time.trim());
+            booking.setSpecialRequest(specialRequest.trim());
             booking.setUser(username);
             repo.requestBooking(booking);
         }

@@ -22,13 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="508dp"
+        android:layout_marginBottom="650dp"
         android:text="Welcome To Vision" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/photo_booth"
         android:layout_width="fill_parent"
-        android:layout_height="490dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="1dp" />
 
@@ -36,8 +37,11 @@
         android:id="@+id/upload"
         style="@style/mainButton"
         android:layout_gravity="end"
-        android:src="@drawable/upload"
-        android:layout_margin="20dp"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/upload" />
 
     <EditText
         android:layout_width="wrap_content"

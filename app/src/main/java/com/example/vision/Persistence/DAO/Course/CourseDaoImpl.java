@@ -16,6 +16,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class CourseDaoImpl extends LiveData<Course> implements CourseDao{
@@ -23,12 +24,13 @@ public class CourseDaoImpl extends LiveData<Course> implements CourseDao{
     private FirebaseFirestore db;
     private CallBack callBack;
     onInter onInter;
-    private User user;
+    private HashMap<String, User> userMap;
 
     public CourseDaoImpl(CallBack callBack, onInter onInter) {
         db = FirebaseFirestore.getInstance();
         this.callBack = callBack;
         this.onInter = onInter;
+        userMap = new HashMap<>();
     }
 
     @Override
@@ -58,62 +60,38 @@ public class CourseDaoImpl extends LiveData<Course> implements CourseDao{
                 });
     }
 
-    private void getUser(String username) {
-      /*  db.collection("users").document(username)
-                .update("Role", "Student").addOnSuccessListener(new OnSuccessListener<Void>() {
+    @Override
+    public void addStudentToCourse(String courseName, String userName) {
+        setUser(userName);
+        db.collection("courses").document(courseName)
+                .update("students", userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                setUser(username);
-                Log.d("Successful", "DocumentSnapshot successfully updated!");
+                callBack.getMessage("Successfully updated");
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Log.w("Failure", "Error updating document", e);
+                callBack.getMessage(e.getMessage());
             }
         });
-
-       */
-    }
-
-    @Override
-    public void addStudentToCourse(String courseName, String userName) {
-      /*  getUser(userName);
-
-
-        db.collection("courses").document(courseName)
-            .update("students", student).addOnSuccessListener(new OnSuccessListener<Void>() {
-                @Override
-                public void onSuccess(Void unused) {
-                    Log.d("Successful", "DocumentSnapshot successfully updated!");
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Log.w("Failure", "Error updating document", e);
-                }
-            });
-
-       */
     }
 
 
 
     private void setUser(String username) {
-      /*  db.collection("users")
+        db.collection("users").document(username)
+                .update("role", "student");
+         db.collection("users")
                 .addSnapshotListener((value, error) -> {
                     assert value != null;
                     for(DocumentSnapshot ds: value.getDocuments()) {
                         User u =  ds.toObject(User.class);
-                        if(u.getName().equals(username)) {
-                            user = u;
-                            Log.i("converted user", "setUser: " + student);
-                            break;
+                        if(u.getEmail().equals(username)) {
+                            userMap.put(username, u);
                         }
                     }
                 });
-
-       */
     }
 
 

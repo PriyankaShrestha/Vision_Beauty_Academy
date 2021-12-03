@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class Course {
     private String name;
     private String contents;
-    private ArrayList<User> students = new ArrayList<>();
     private String startDate;
-    private String endDate;
+    private String duration;
 
     public Course() {}
 
@@ -27,14 +26,6 @@ public class Course {
         this.contents = contents;
     }
 
-    public ArrayList<User> getStudents() {
-        return students;
-    }
-
-    public void addStudent(User student) {
-        students.add(student);
-    }
-
     public String getStartDate() {
         return startDate;
     }
@@ -43,11 +34,11 @@ public class Course {
         this.startDate = startDate;
     }
 
-    public String getEndDate() {
-        return endDate;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setEndDate(String duration) {
+        this.duration = duration;
     }
 }

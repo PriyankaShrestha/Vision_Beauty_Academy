@@ -73,25 +73,19 @@ public class BookAppointment extends Fragment {
         int year = cal.get(Calendar.YEAR);
         int month = cal.get(Calendar.MONTH);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        datePicker.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        getContext(), android.R.style.Theme_Holo_Light_Dialog_MinWidth, setListener,
-                        year, month, day
-                );
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                datePickerDialog.show();
-            }
+        datePicker.setOnClickListener(view -> {
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    getContext(), android.R.style.Theme_Holo_Light_Dialog_MinWidth, setListener,
+                    year, month, day
+            );
+            datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            datePickerDialog.show();
         });
 
-        setListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                month = month+1;
-                String selectedDate = dayOfMonth + "/" + month + "/" + year;
-                datePicker.setText(selectedDate);
-            }
+        setListener = (view, year1, month1, dayOfMonth) -> {
+            month1 = month1 +1;
+            String selectedDate = dayOfMonth + "/" + month1 + "/" + year1;
+            datePicker.setText(selectedDate);
         };
 
         book.setOnClickListener(v -> onBookClicked());
@@ -113,12 +107,8 @@ public class BookAppointment extends Fragment {
     }
 
     private void onBookClicked() {
-        viewModel.getCurrentUser().observe(getViewLifecycleOwner(), new Observer<FirebaseUser>() {
-            @Override
-            public void onChanged(FirebaseUser user) {
-                viewModel.requestBooking(datePicker.getText().toString(), pickedTime, specialRequest.getText().toString(), user.getEmail());
-            }
-        });
+        viewModel.getCurrentUser().observe(getViewLifecycleOwner(), user ->
+                viewModel.requestBooking(datePicker.getText().toString(), pickedTime, specialRequest.getText().toString(), user.getEmail()));
     }
 
     private List<String> getTime() {

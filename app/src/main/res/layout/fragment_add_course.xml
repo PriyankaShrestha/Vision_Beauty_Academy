@@ -62,7 +62,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/end_date"
                 style="@style/inputField"
-                android:hint="End Date" />
+                android:hint="Duration" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

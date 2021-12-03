@@ -23,7 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
 
 public class UserDAO extends LiveData<FirebaseUser> {
-    private FirebaseAuth firebaseAuth;
+    private final FirebaseAuth  firebaseAuth;
     private final FirebaseAuth.AuthStateListener listener = firebaseAuth -> setValue(firebaseAuth.getCurrentUser());
     private FirebaseFirestore db;
     private CallBack callBack;
@@ -78,8 +78,10 @@ public class UserDAO extends LiveData<FirebaseUser> {
         firebaseAuth.signInWithEmailAndPassword(username, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
+                        onActive();
                         firebaseUser.postValue(firebaseAuth.getCurrentUser());
                     } else {
+                        firebaseUser.postValue(null);
                         callBack.getMessage(task.getException().getMessage());
                     }
                 });
@@ -100,6 +102,10 @@ public class UserDAO extends LiveData<FirebaseUser> {
 
     public void deleteProfile() {
         firebaseAuth.getCurrentUser().delete();
+    }
+
+    public void logout() {
+        onInactive();
     }
 
 

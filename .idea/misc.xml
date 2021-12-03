@@ -10,8 +10,8 @@
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_register_user.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/activity_register_user.xml" value="0.2" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/available_time.xml" value="0.1" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/booking_items.xml" value="0.1875" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/course_item.xml" value="0.264" />
@@ -21,7 +21,7 @@
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_services.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/frag_settings.xml" value="0.25" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_course.xml" value="0.264" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_services.xml" value="0.4" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_services.xml" value="0.2" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_add_student_to_class.xml" value="0.25" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_book_appointment.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/fragment_register_user.xml" value="0.264" />
@@ -38,7 +38,8 @@
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/products_item.xml" value="0.264" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/layout/service_items.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/appbar.xml" value="0.24444444444444444" />
-        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Priyanka/AndroidStudioProjects/Vision/app/src/main/res/menu/menu_for_all.xml" value="0.20512820512820512" />
       </map>
     </option>
   </component>

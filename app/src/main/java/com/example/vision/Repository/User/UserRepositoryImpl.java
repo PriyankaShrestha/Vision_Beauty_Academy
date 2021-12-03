@@ -45,6 +45,7 @@ public class UserRepositoryImpl implements UserRepository, CallBack, UserDAO.onI
     public void logout() {
         AuthUI.getInstance()
                 .signOut(app.getApplicationContext());
+
     }
 
     @Override

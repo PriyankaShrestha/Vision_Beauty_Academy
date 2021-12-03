@@ -6,13 +6,12 @@
         android:id="@+id/logout"
         android:title="Logout"
         app:showAsAction="always"
+        android:icon="@drawable/logout"
         android:onClick="logout"/>
 
-    <item android:title="@string/settings"
+   <!-- <item android:title="@string/settings"
         android:id="@+id/settings"/>
-
-    <item android:title="@string/front_page"
-        android:id="@+id/frontpage"/>
+        -->
 
     <item android:title="@string/services"
         android:id="@+id/services"/>

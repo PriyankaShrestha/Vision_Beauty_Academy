@@ -14,6 +14,7 @@ import com.example.vision.Repository.Course.CourseRepositoryImpl;
 import com.example.vision.Repository.User.UserRepository;
 import com.example.vision.Repository.User.UserRepositoryImpl;
 
+import java.beans.PropertyChangeEvent;
 import java.util.ArrayList;
 
 public class AddStudentViewModel extends AndroidViewModel {
@@ -25,6 +26,12 @@ public class AddStudentViewModel extends AndroidViewModel {
         super(app);
         userRepository = new UserRepositoryImpl(app);
         courseRepository = new CourseRepositoryImpl(app);
+        courseRepository.addPropertyChangeListener("MessageFromFirebase", this::message);
+    }
+
+    private void message(PropertyChangeEvent evt) {
+        String message = (String) evt.getNewValue();
+        Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show();
     }
 
 
@@ -38,7 +45,7 @@ public class AddStudentViewModel extends AndroidViewModel {
 
     public void addStudentToCourse(String courseName, String userName) {
         if(!courseName.trim().equals("") && !userName.trim().equals("")) {
-            courseRepository.addStudentToCourse(courseName, userName);
+            courseRepository.addStudentToCourse(courseName.trim(), userName.trim());
         }
         else Toast.makeText(getApplication(), "Please select all", Toast.LENGTH_SHORT).show();
     }

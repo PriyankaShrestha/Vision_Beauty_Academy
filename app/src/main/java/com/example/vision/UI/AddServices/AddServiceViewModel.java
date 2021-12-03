@@ -30,9 +30,9 @@ public class AddServiceViewModel extends AndroidViewModel {
     public void addService(String serviceName, double price, String description) {
         if(!serviceName.trim().equals("") && price != 0 && !description.trim().equals("")) {
             Service service = new Service();
-            service.setService_name(serviceName);
+            service.setService_name(serviceName.trim());
             service.setPrice(price);
-            service.setDescription(description);
+            service.setDescription(description.trim());
             serviceRepository.addService(service);
         }
         else Toast.makeText(getApplication(), "Please fill out all the fields", Toast.LENGTH_SHORT).show();
