@@ -1,7 +1,7 @@
  **Vision Beauty Academy and Makeup Studio**
  
  
- Vision Beauty and Makeup Studio is a beauty academy which also provides beauty services. It is owned by Mrs. Prina Shrestha who is my sister and my client for this project. I am going to build an application for my client which will help her to manage the classes and students, to share the materials through an app, book an appointment for a service and a platform where the students can share and show off their talent.
+Vision Beauty and Makeup Studio is a beauty academy which also provides beauty services. It is owned by Mrs. Prina Shrestha who is my client for this project. The app will have functionalities such as adding, editing, viewing and deleting the services, courses, bookings and images. The app will also help my client to manager the classes and students in a easier way.
 
 
 - [X] As a user I want to be able to register to the app.
@@ -11,7 +11,7 @@
 - [X] As a client I want to be able to book an appointment.
 - [X] As an Administrator I want to be able to view the bookings.
 - [X] As an Administrator I want to be able to add a new course that is going to start in the near future.
-- [ ] As an Administrator I want to be able to assign students in the registered class.
+- [X] As an Administrator I want to be able to assign students in the registered class.
 - [ ] As an Administrator I want to be able to take attendance of the students.
 - [ ] As an Administrator I want to be able to see the data of the students.
 - [ ] As an Administrator I want to be able to add material for the students.
