@@ -22,3 +22,8 @@ Vision Beauty and Makeup Studio is a beauty academy which also provides beauty s
 - [ ] As a user I want to be able to capture pictures and post in the app feed.
 - [ ] As a user I want to be able to download the photos from the app.
 - [ ] As an administrator I want to be able to send notifications to the user/users.
+
+
+
+
+Youtube link: https://www.youtube.com/watch?v=dvR9PGLwsRk
