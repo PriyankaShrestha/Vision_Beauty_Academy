@@ -26,4 +26,11 @@ Vision Beauty and Makeup Studio is a beauty academy which also provides beauty s
 
 
 
-Youtube link: https://www.youtube.com/watch?v=dvR9PGLwsRk
+**Youtube link:** 
+https://www.youtube.com/watch?v=dvR9PGLwsRk
+
+
+**References**
+- https://github.com/KasperKnop/GoogleServicesExample
+- https://github.com/KasperKnop/NavigationExample
+- https://www.youtube.com/watch?v=E1LSY3g-CtY
