@@ -24,12 +24,6 @@ Vision Beauty and Makeup Studio is a beauty academy which also provides beauty s
 - [ ] As an administrator I want to be able to send notifications to the user/users.
 
 
-
-
-**Youtube link:** 
-https://www.youtube.com/watch?v=dvR9PGLwsRk
-
-
 **References**
 - https://github.com/KasperKnop/GoogleServicesExample
 - https://github.com/KasperKnop/NavigationExample
